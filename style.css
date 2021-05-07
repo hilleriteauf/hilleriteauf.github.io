@@ -14,16 +14,29 @@ body {
 
 #header_container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 40%;
+    height: 100%;
+    top: 45%;
     transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px)
+{
+    #header_container {
+        flex-direction: row;
+    }
 }
 
 #header_container > h1 {
     font-size: 50px;
+}
+
+#header_container > div {
+    text-align: center;
 }
 
 #header_container > div > h1 {
