@@ -6,13 +6,30 @@
 
 html {
     height: 100%;
-    overflow: hidden;
 }
 
 body {
     height: 100%;
     position: relative;
     margin: 0;
+    overflow: visible;
+}
+
+header {
+    position: fixed;
+    top: -40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #59689C;
+    padding: 10px 30px;
+    z-index: 10;
+    transition: top 0.5s;
+}
+
+header.visible {
+    top: 0px;
 }
 
 #accueil {
@@ -92,8 +109,8 @@ body {
 }
 
 .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
+    -webkit-transform: translateY(-10px) rotate(45deg);
 }
 
 .arrow {
@@ -104,9 +121,9 @@ body {
 }
 
 .arrow_container {
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
     transition: transform 0.5s;
-    overflow: inherit;
-    margin-top: -10px;
 }
 
 #sommaire:hover .arrow_container {
@@ -130,4 +147,14 @@ button {
 button.dark {
     background-color: #59689C;
     color: white;
+}
+
+header span {
+    color: white;
+    margin: 0 5px;
+}
+
+.button {
+    cursor: pointer;
+    user-select: none;
 }

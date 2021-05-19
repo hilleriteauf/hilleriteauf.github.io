@@ -1,3 +1,9 @@
+function init() {
+    setAnchors();
+
+    window.addEventListener('scroll', checkScroll, {passive: true});
+}
+
 function setAnchors() {
 
     let buttons = document.querySelectorAll("button[href],.button[href]");
@@ -14,4 +20,12 @@ function setAnchors() {
         });
     });
 
+}
+
+function checkScroll(e) {
+    let scroll = window.scrollY;
+    let header = document.getElementsByTagName("header")[0];
+    
+    if (scroll > 400) header.classList.add("visible");
+    else header.classList.remove("visible");
 }
