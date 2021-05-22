@@ -6,7 +6,7 @@ function init() {
 
 function setAnchors() {
 
-    let buttons = document.querySelectorAll("button[href],.button[href]");
+    let buttons = document.querySelectorAll(".anchor_button[href]");
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {

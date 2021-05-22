@@ -50,13 +50,13 @@ header.visible {
 
 #accueil > #titres > h1 {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 4rem;
     margin: 0;
 }
 
 #accueil > #titres > h2 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0 0 10px 5px;
 }
 
@@ -131,10 +131,10 @@ header.visible {
     -webkit-transform: translateY(10px);
 }
 
-button {
+button, .button {
     background-color: #8AAEE5;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     border: none;
     padding: 7px;
     margin: 0;
@@ -142,9 +142,10 @@ button {
     min-width: 60px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+    text-decoration: none;
 }
 
-button.dark {
+button.dark , .button.dark {
     background-color: #59689C;
     color: white;
 }
@@ -154,7 +155,7 @@ header span {
     margin: 0 5px;
 }
 
-.button {
+.anchor_button {
     cursor: pointer;
     user-select: none;
 }

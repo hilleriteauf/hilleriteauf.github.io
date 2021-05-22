@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_a_propos.css">
     <script type="text/javascript" src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,39 +17,106 @@
 
 <body>
     <header>
-        <span>FRÉDÉRIC HILLERITEAU</span>
+        <span class="anchor_button" href="#accueil">FRÉDÉRIC HILLERITEAU</span>
         <div>
-            <span class="button" href="#accueil">À PROPOS</span>
-            <span class="button" href="#stage">STAGE</span>
-            <span class="button">PPE</span>
-            <span class="button">VEILLE</span>
+            <span class="anchor_button" href="#a_propos">À PROPOS</span>
+            <span class="anchor_button" href="#stage">STAGE</span>
+            <span class="anchor_button">PPE</span>
+            <span class="anchor_button">VEILLE</span>
         </div>
     </header>
     <div id="accueil">
         <div id="titres">
             <h1>Frédéric<br>Hilleriteau</h1>
             <h2>2<sup>ème</sup> année de BTS SIO option SLAM</h2>
-            <button>CV</button>
-            <button>Compétences BTS</button>
+            <a class="button" href="documents/CV alternance.pdf" target="_blank">CV</a>
+            <a class="button" href="documents/Compétences BTS.pdf" target="_blank">Compétences BTS</a>
         </div>
         <div id="sommaire">
             <div id="boutons">
-                <button class="dark" href="#stage">STAGE</button>
-                <button class="dark">PPE</button>
-                <button class="dark">VEILLE</button>
+                <button class="anchor_button dark" href="#stage">STAGE</button>
+                <button class="anchor_button dark">PPE</button>
+                <button class="anchor_button dark">VEILLE</button>
             </div>
             <div class="line"></div>
-            <div class="arrow_container button" href="#stage">
+            <div class="arrow_container anchor_button" href="#a_propos">
                 <div class="arrow down"></div>
             </div>
 
         </div>
     </div>
 
+    <div id="a_propos">
+        <div id="presentation">
+            <img src="images/photo.jpg">
+            <div>
+                <h1>Bonjour,</h1>
+                <p>Je suis Frédéric Hilleriteau, étudiant en 2ème année de <b>BTS SIO</b> (Services Informatiques aux Organisations) <b>option SLAM</b> (Solution Logicielles et Application Métier).
+                    <br><br>
+                    Vous trouverez sur ce site les détails de mon parcours.</p>
+                <span>Bonne visite</span>
+            </div>
+        </div>
+        <div id="details">
+            <div id="competences">
+                <div>
+                    <img src="images/logos/html.png">
+                    <span>HTML</span>
+                </div>
+                <div>
+                    <img src="images/logos/css.png">
+                    <span>CSS</span>
+                </div>
+                <div>
+                    <img src="images/logos/js.png">
+                    <span>Javascript</span>
+                </div>
+                <div>
+                    <img src="images/logos/php.png">
+                    <span>PHP</span>
+                </div>
+                <div>
+                    <img src="images/logos/symphony.png">
+                    <span>Symphony</span>
+                </div>
+                <div>
+                    <img src="images/logos/sql.png">
+                    <span>SQL</span>
+                </div>
+                <div>
+                    <img src="images/logos/mongodb.png">
+                    <span>Mongodb</span>
+                </div>
+                <div>
+                    <img src="images/logos/java.png">
+                    <span>Java</span>
+                </div>
+                <div>
+                    <img src="images/logos/android.png">
+                    <span>Android</span>
+                </div>
+                <div>
+                    <img src="images/logos/python.png">
+                    <span>Python</span>
+                </div>
+            </div>
+            <div id="parcours">
+                <div class="etape">
+                    <span><b>Bac STI2D</b><br>2019</span>
+                    <div class="point"></div>
+                </div>
+                <div class="etape">
+                    <span><b>BTS SIO</b><br>2019 - 2021</span>
+                    <div class="point"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="stage">
 
     </div>
-    <button href="#accueil">Retour en haut</button>
+    <button class="anchor_button" href="#accueil">Retour en haut</button>
 
     <script>
         init();
