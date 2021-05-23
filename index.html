@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_accueil.css">
+    <link rel="stylesheet" href="style_bandeau.css">
     <link rel="stylesheet" href="style_a_propos.css">
+    <link rel="stylesheet" href="style_project.css">
     <script type="text/javascript" src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,7 +24,7 @@
         <div>
             <span class="anchor_button" href="#a_propos">À PROPOS</span>
             <span class="anchor_button" href="#stage">STAGE</span>
-            <span class="anchor_button">PPE</span>
+            <span class="anchor_button" href="#ppe">PPE</span>
             <span class="anchor_button">VEILLE</span>
         </div>
     </header>
@@ -35,7 +38,7 @@
         <div id="sommaire">
             <div id="boutons">
                 <button class="anchor_button dark" href="#stage">STAGE</button>
-                <button class="anchor_button dark">PPE</button>
+                <button class="anchor_button dark" href="#ppe">PPE</button>
                 <button class="anchor_button dark">VEILLE</button>
             </div>
             <div class="line"></div>
@@ -113,9 +116,128 @@
         </div>
     </div>
 
-    <div id="stage">
+    <div id="stage" class="project">
+        <div class="title">
+            <h1>Stage - Réalisation d'une application de pointage</h1>
+            <h2>Du 4 janvier au 19 février chez AJS Blackfox (St Germain sur Moine)</h2>
+        </div>
+        <div class="project_content">
+            <div class="viewer">
+                <div class="display">
+                    <img src="images/projects/stage/employes.jpg" class="display">
+                </div>
+                <div class="selector">
+                    <div class="arrow left"></div>
+                    <div class="images_selector_container">
+                        <div class="images_selector">
+                            <img src="images/projects/stage/employes.jpg">
+                            <img src="images/projects/stage/visite.jpg">
+                            <img src="images/projects/stage/parametres.jpg">
+                            <img src="images/projects/stage/qr_code.gif">
+                        </div>
+                    </div>
+                    <div class="arrow right"></div>
+                </div>
+            </div>
+            <div class="description">
+                J'ai eu l'opportunité de développer de A à Z une application de pointage entrée/sortie des employés et visiteurs de l'entreprise.<br><br>
 
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.<br><br>
+                    
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.
+            </div>
+        </div>
     </div>
+
+    <div id="ppe" class="project">
+        <div class="title">
+            <h1>Projets Personnels Encadrés</h1>
+        </div>
+        <div class="subtitle">
+            <button class="project_content_selector selected" href="#ppe1">PPE1</button>
+            <button class="project_content_selector" href="#ppe3">PPE3</button>
+            <button class="project_content_selector" href="#ppe4">PPE4</button>
+        </div>
+        <div class="project_content" id="ppe1">
+            <div class="viewer">
+                <div class="display">
+                    <img src="images/projects/stage/employes.jpg" class="display">
+                </div>
+                <div class="selector">
+                    <div class="arrow left"></div>
+                    <div class="images_selector_container">
+                        <div class="images_selector">
+                            <img src="images/projects/stage/employes.jpg">
+                            <img src="images/projects/stage/visite.jpg">
+                            <img src="images/projects/stage/parametres.jpg">
+                            <img src="images/projects/stage/qr_code.gif">
+                        </div>
+                    </div>
+                    <div class="arrow right"></div>
+                </div>
+            </div>
+            <div class="description">
+                J'ai eu l'opportunité de développer de A à Z une application de pointage entrée/sortie des employés et visiteurs de l'entreprise.<br><br>
+
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.<br><br>
+                    
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.
+            </div>
+        </div>
+        <div class="project_content hidden" id="ppe3">
+            <div class="viewer">
+                <div class="display">
+                    <img src="images/projects/stage/employes.jpg" class="display">
+                </div>
+                <div class="selector">
+                    <div class="arrow left"></div>
+                    <div class="images_selector_container">
+                        <div class="images_selector">
+                            <img src="images/projects/stage/employes.jpg">
+                            <img src="images/projects/stage/visite.jpg">
+                            <img src="images/projects/stage/parametres.jpg">
+                            <img src="images/projects/stage/qr_code.gif">
+                        </div>
+                    </div>
+                    <div class="arrow right"></div>
+                </div>
+            </div>
+            <div class="description">
+                PPE3<br><br>
+
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.<br><br>
+                    
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.
+            </div>
+        </div>
+        <div class="project_content hidden" id="ppe4">
+            <div class="viewer">
+                <div class="display">
+                    <img src="images/projects/stage/employes.jpg" class="display">
+                </div>
+                <div class="selector">
+                    <div class="arrow left"></div>
+                    <div class="images_selector_container">
+                        <div class="images_selector">
+                            <img src="images/projects/stage/employes.jpg">
+                            <img src="images/projects/stage/visite.jpg">
+                            <img src="images/projects/stage/parametres.jpg">
+                            <img src="images/projects/stage/qr_code.gif">
+                        </div>
+                    </div>
+                    <div class="arrow right"></div>
+                </div>
+            </div>
+            <div class="description">
+                PPE4<br><br>
+
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.<br><br>
+                    
+                Nullam ornare purus ac sapien malesuada malesuada. Praesent at vestibulum tellus. Duis gravida pellentesque nibh, ac faucibus lacus finibus eu. Integer placerat erat quis urna lobortis gravida. Praesent sodales ligula sit amet consectetur faucibus. Nullam sed ligula sit amet massa faucibus placerat. Curabitur vehicula hendrerit ipsum, sed scelerisque eros aliquet vel. Nullam feugiat tincidunt metus, ac volutpat tortor efficitur sed. In hac habitasse platea dictumst.
+            </div>
+        </div>
+    </div>
+
     <button class="anchor_button" href="#accueil">Retour en haut</button>
 
     <script>

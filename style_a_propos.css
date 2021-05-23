@@ -7,6 +7,8 @@
 #a_propos > #presentation {
     display: flex;
     justify-content: center;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 #a_propos > #presentation > img {
@@ -17,6 +19,8 @@
     image-rendering: -moz-crisp-edges;         /* Firefox */
     image-rendering:   -o-crisp-edges;         /* Opera */
     image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 #a_propos > #presentation > div {
@@ -33,10 +37,11 @@
 }
 
 #a_propos > #details {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 950px;
+    margin: 50px auto 0 auto;
 }
 
 #a_propos > #details > #competences {
@@ -49,19 +54,24 @@
 
 #a_propos > #details > #competences > div {
     width: 70px;
-    background-color: #59689C;
+    background-color: var(--primary-color-dark);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 #a_propos > #details > #competences > div > img {
     height: 30px;
     width: auto;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 #a_propos > #details > #competences > div > span {
@@ -70,7 +80,7 @@
 }
 
 #parcours {
-    background-color: #8AAEE5;
+    background-color: var(--primary-color-light);
     border-radius: 10px;
     display: flex;
     padding: 10px;
@@ -78,16 +88,24 @@
     align-content: center;
     align-items: center;
     margin-bottom: 20px;
+    padding: 40px;
 }
 
-.etape {
+#parcours .etape {
     display: inline-block;
     overflow: visible;
     text-align: center;
-    margin: 0 20px;
 }
 
-.point {
+#parcours .etape:not(:first-child) {
+    margin-left: 40px;
+}
+
+#parcours .etape:not(:last-child) {
+    margin-right: 40px;
+}
+
+#parcours .point {
     height: 20px;
     width: 20px;
     background-color: white;
@@ -97,12 +115,12 @@
     position: relative;
 }
 
-.etape:not(:first-child) .point::before {
+#parcours .etape:not(:first-child) .point::before {
     content: "";
     position: absolute;
     right: 50%;
     top: 8px;
-    width: 130px;
+    width: 170px;
     height: 3px;
     background-color: white;
 }
