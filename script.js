@@ -4,7 +4,7 @@ function init() {
     setViewerImageButtons();
     setProjectContentSelectors();
 
-    window.addEventListener('scroll', checkScroll, {passive: true});
+    document.querySelector("main").addEventListener('scroll', checkScroll, {passive: true});
 }
 
 function setAnchors() {
@@ -54,7 +54,8 @@ function setProjectContentSelectors() {
 }
 
 function checkScroll(e) {
-    let scroll = window.scrollY;
+    let scroll = document.querySelector("main").scrollTop;
+    //console.log("scroll", scroll);
     let header = document.getElementsByTagName("header")[0];
     
     if (scroll > 400) header.classList.add("visible");

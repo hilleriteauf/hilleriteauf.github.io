@@ -15,7 +15,11 @@ body {
     height: 100%;
     position: relative;
     margin: 0;
-    overflow: visible;
+    overflow: auto;
+}
+
+main {
+    height: 100%;
 }
 
 button, .button {
@@ -68,3 +72,24 @@ button.dark , .button.dark {
     box-shadow: none;
 }
 
+#travaux {
+    background-color: #ffa12d;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+#travaux img {
+    height: 100px;
+}
+
+#travaux span {
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+}
