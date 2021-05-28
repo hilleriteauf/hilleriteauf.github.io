@@ -20,7 +20,7 @@ function setFullscreenViewerCloser()
         viewerWindow.classList.add("hidden");
     });
 
-    let fullscreenViewerContainer = document.querySelector(".fullscreen_viewer_container");
+    let fullscreenViewerContainer = document.querySelector(".fullscreen_viewer_img_container img");
     fullscreenViewerContainer.addEventListener("click", e => {
         //stop the event propagating to the body element
         var evt = e ? e : window.event;
@@ -40,7 +40,7 @@ function setFullscreenViewerArrows()
     let arrows = document.querySelectorAll("#fullscreen_viewer_window .arrow_container ");
 
     arrows.forEach(arrow => {
-        arrow.addEventListener("click", () => {
+        arrow.addEventListener("click", e => {
             let viewerWindow = document.getElementById("fullscreen_viewer_window");
             let viewer = viewerWindow.querySelector(".fullscreen_viewer_img_container img");
 
@@ -55,6 +55,13 @@ function setFullscreenViewerArrows()
             
             viewer.src = srcs[index];
             viewerWindow.dataset.index = index;
+
+            //stop the event propagating to the body element
+            var evt = e ? e : window.event;
+
+            if (evt.stopPropagation) {evt.stopPropagation();}
+            else {evt.cancelBubble=true;}
+            return false;
         });
     });
 }
