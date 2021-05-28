@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="style_bandeau.css">
     <link rel="stylesheet" href="style_a_propos.css">
     <link rel="stylesheet" href="style_project.css">
+    <link rel="stylesheet" href="style_fullscreen_viewer.css">
     <script type="text/javascript" src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Portfolio</title>
 </head>
@@ -29,6 +31,29 @@
         </div>
     </header>
     <main>
+        <div id="fullscreen_viewer_window" class="hidden">
+            <div class="close_button_container">
+                <span class="material-icons simple_button">
+                    close
+                </span>
+            </div>
+            <div class="fullscreen_viewer_container">
+                
+                <div class="arrow_container left simple_button">
+                    <span class="material-icons">
+                        arrow_back_ios
+                    </span>
+                </div>
+                <div class="fullscreen_viewer_img_container">
+                    <img src="images/projects/stage/employes.jpg">
+                </div>
+                <div class="arrow_container right simple_button">
+                    <span class="material-icons">
+                        arrow_forward_ios
+                    </span>
+                </div>
+            </div>
+        </div>
         <div id="accueil">
             <div id="titres">
                 <h1>Frédéric<br>Hilleriteau</h1>

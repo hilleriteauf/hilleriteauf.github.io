@@ -20,6 +20,7 @@
 
 .viewer .display img {
     width: 500px;
+    cursor: zoom-in;
 }
 
 .selector {

@@ -63,7 +63,7 @@
     width: 30px;
 }
 
-.arrow_container {
+#accueil .arrow_container {
     padding: 0px 10px 0px 10px;
     cursor: pointer;
     transition: transform 0.5s;
