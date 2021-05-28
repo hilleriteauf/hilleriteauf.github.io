@@ -52,9 +52,6 @@ function setFullscreenViewerArrows()
             let index = parseInt(viewerWindow.dataset.index) + arrowDirection;
             if (index >= srcs.length) index = srcs.length -1;
             else if (index < 0) index = 0;
-            console.log("srcs", srcs);
-            console.log("index", index);
-            console.log("src", srcs[index]);
             
             viewer.src = srcs[index];
             viewerWindow.dataset.index = index;
@@ -77,7 +74,6 @@ function setFullscreenViewerOpeners()
             });
 
             let index = ("dataset" in opener && "index" in opener.dataset ? opener.dataset.index : 0);
-            console.log("srcs", srcs);
 
             viewerWindow.dataset.index = index;
             viewerWindow.dataset.srcs = JSON.stringify(srcs);
@@ -135,7 +131,6 @@ function setProjectContentSelectors() {
 
 function checkScroll(e) {
     let scroll = document.querySelector("main").scrollTop;
-    //console.log("scroll", scroll);
     let header = document.getElementsByTagName("header")[0];
     
     if (scroll > 400) header.classList.add("visible");
@@ -146,7 +141,6 @@ function setViewerImageButtons() {
     let images = document.querySelectorAll(".viewer .images_selector img");
 
     images.forEach(image => {
-        console.log("setting viewer image button", image);
         image.addEventListener("click", () => {
             let src = image.getAttribute("src");
             let displayImg = image.closest(".viewer").querySelector(".viewer .display img");
@@ -171,7 +165,6 @@ function setViewerScrollButtons()
     let buttons = document.querySelectorAll(".viewer .arrow");
 
     buttons.forEach(button => {
-        console.log("setting viewer scroll button", button);
         button.addEventListener("click", () => {
             let selectorContainer = button.parentElement.querySelector(".images_selector_container");
             let selector = selectorContainer.querySelector(".images_selector");
@@ -185,7 +178,6 @@ function setViewerScrollButtons()
             if (left.length == 0) left = 0;
             else left = parseInt(left);
 
-            console.log("initial left", left);
 
             left += 200 * (isLeftButton ? 1 : -1);
 
@@ -193,7 +185,6 @@ function setViewerScrollButtons()
             else if (left > 0) left = 0;
 
             selector.style.left = left + "px";
-            console.log("final left", selector.style.left);
         })
     });
 }

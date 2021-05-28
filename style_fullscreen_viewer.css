@@ -61,4 +61,5 @@
 #fullscreen_viewer_window .material-icons {
     font-size: 40px;
     color: white;
+    overflow: visible;
 }
