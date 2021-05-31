@@ -116,7 +116,7 @@ function setProjectContentSelectors() {
         button.addEventListener("click", () => {
             
             let project = button.closest(".project");
-            let projectContents = project.querySelectorAll(".project_content");
+            let projectContents = project.querySelectorAll(".project_content, .veille_content");
             let buttonSelectors = project.querySelectorAll(".project_content_selector");
             
             projectContents.forEach(projectContent => {
