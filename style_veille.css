@@ -14,7 +14,8 @@
 }
 
 .description_container {
-    max-width: 950px;
+    max-width: 1000px;
+    box-sizing: border-box;
     margin: 0 auto 30px auto;
 }
 
@@ -43,6 +44,7 @@
 }
 
 .veille_grid {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     margin: 0 auto;
