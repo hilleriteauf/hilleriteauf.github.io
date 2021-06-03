@@ -111,3 +111,24 @@ button.dark , .button.dark {
     user-select: none; /* Non-prefixed version, currently*/
 }
 
+footer {
+    background-color: var(--primary-color-dark);
+}
+
+footer > div {
+    margin: 30px;
+}
+
+footer a {
+    overflow: visible;
+    margin-right: 10px;
+}
+
+footer img {
+    height: 30px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}
