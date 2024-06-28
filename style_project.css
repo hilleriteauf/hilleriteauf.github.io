@@ -16,6 +16,9 @@
 
 .viewer {
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .viewer .display img {
@@ -87,7 +90,6 @@
 
 .tags {
     display: flex;
-    margin-top: 20px;
 }
 
 span.tag {

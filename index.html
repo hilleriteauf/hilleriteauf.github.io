@@ -1,354 +1,217 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_accueil.css">
-    <link rel="stylesheet" href="style_bandeau.css">
-    <link rel="stylesheet" href="style_a_propos.css">
-    <link rel="stylesheet" href="style_project.css">
-    <link rel="stylesheet" href="style_fullscreen_viewer.css">
-    <link rel="stylesheet" href="style_veille.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_accueil.css" />
+    <link rel="stylesheet" href="style_bandeau.css" />
+    <link rel="stylesheet" href="style_a_propos.css" />
+    <link rel="stylesheet" href="style_project.css" />
+    <link rel="stylesheet" href="style_fullscreen_viewer.css" />
+    <link rel="stylesheet" href="style_veille.css" />
     <script type="text/javascript" src="script.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <span class="anchor_button" href="#accueil">FRÉDÉRIC HILLERITEAU</span>
-        <div>
-            <span class="anchor_button" href="#a_propos">À PROPOS</span>
-            <span class="anchor_button" href="#stage">STAGE</span>
-            <span class="anchor_button" href="#ppe">PPE</span>
-            <span class="anchor_button" href="#veille">VEILLE</span>
-        </div>
-    </header>
+  <body>
     <main>
-        <div id="fullscreen_viewer_window" class="hidden">
-            <div class="close_button_container">
-                <span class="material-icons simple_button">
-                    close
-                </span>
-            </div>
-            <div class="fullscreen_viewer_container">
-                
-                <div class="arrow_container left simple_button">
-                    <span class="material-icons">
-                        arrow_back_ios
-                    </span>
-                </div>
-                <div class="fullscreen_viewer_img_container">
-                    <img src="images/projects/stage/employes.jpg">
-                </div>
-                <div class="arrow_container right simple_button">
-                    <span class="material-icons">
-                        arrow_forward_ios
-                    </span>
-                </div>
-            </div>
+      <div id="fullscreen_viewer_window" class="hidden">
+        <div class="close_button_container">
+          <span class="material-icons simple_button"> close </span>
         </div>
-        <div id="accueil">
-            <div id="titres">
-                <h1>Frédéric<br>Hilleriteau</h1>
-                <h2>2<sup>ème</sup> année de BTS SIO option SLAM</h2>
-                <a class="button" href="documents/CV alternance.pdf" target="_blank">CV</a>
-                <a class="button" href="documents/Compétences BTS.pdf" target="_blank">Compétences BTS</a>
-            </div>
-            <div id="sommaire">
-                <div id="boutons">
-                    <button class="anchor_button dark" href="#stage">STAGE</button>
-                    <button class="anchor_button dark" href="#ppe">PPE</button>
-                    <button class="anchor_button dark" href="#veille">VEILLE</button>
-                </div>
-                <div class="line"></div>
-                <div class="arrow_container anchor_button" href="#a_propos">
-                    <div class="arrow down"></div>
-                </div>
-    
-            </div>
+        <div class="fullscreen_viewer_container">
+          <div class="arrow_container left simple_button">
+            <span class="material-icons"> arrow_back_ios </span>
+          </div>
+          <div class="fullscreen_viewer_img_container">
+            <img src="images/projects/stage/employes.jpg" />
+          </div>
+          <div class="arrow_container right simple_button">
+            <span class="material-icons"> arrow_forward_ios </span>
+          </div>
         </div>
-    
-        <div id="a_propos">
-            <div id="presentation">
-                <img src="images/photo.jpg">
-                <div>
-                    <h1>Bonjour,</h1>
-                    <p>Je suis Frédéric Hilleriteau, étudiant en 2ème année de <b>BTS SIO</b> (Services Informatiques aux Organisations) <b>option SLAM</b> (Solution Logicielles et Application Métier).
-                        <br><br>
-                        Vous trouverez sur ce site les détails de mon parcours.</p>
-                    <span>Bonne visite</span>
-                </div>
-            </div>
-            <div id="details">
-                <div id="competences">
-                    <div>
-                        <img src="images/logos/html.png">
-                        <span>HTML</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/css.png">
-                        <span>CSS</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/js.png">
-                        <span>Javascript</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/php.png">
-                        <span>PHP</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/symphony.png">
-                        <span>Symphony</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/sql.png">
-                        <span>SQL</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/mongodb.png">
-                        <span>Mongodb</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/java.png">
-                        <span>Java</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/android.png">
-                        <span>Android</span>
-                    </div>
-                    <div>
-                        <img src="images/logos/python.png">
-                        <span>Python</span>
-                    </div>
-                </div>
-                <div id="parcours">
-                    <div class="etape">
-                        <span><b>Bac STI2D</b><br>2019</span>
-                        <div class="point"></div>
-                    </div>
-                    <div class="etape">
-                        <span><b>BTS SIO</b><br>2019 - 2021</span>
-                        <div class="point"></div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div id="accueil">
+        <div id="titres">
+          <h1>Frédéric<br />Hilleriteau</h1>
+          <h2>2<sup>ème</sup> année de cycle ingénieur ESIEA</h2>
         </div>
-    
-        <div id="stage" class="project">
-            <div class="title">
-                <h1>Stage - Réalisation d'une application de pointage</h1>
-                <h2>Du 4 janvier au 19 février chez AJS Blackfox (St Germain sur Moine)</h2>
-            </div>
-            <div class="project_content">
-                <div class="viewer">
-                    <div class="display">
-                        <img src="images/projects/stage/employes.jpg" class="display">
-                    </div>
-                    <div class="selector">
-                        <div class="arrow left"></div>
-                        <div class="images_selector_container">
-                            <div class="images_selector">
-                                <img src="images/projects/stage/employes.jpg">
-                                <img src="images/projects/stage/visite.jpg">
-                                <img src="images/projects/stage/parametres.jpg">
-                                <img src="images/projects/stage/qr_code.gif">
-                            </div>
-                        </div>
-                        <div class="arrow right"></div>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Android</span>
-                        <span class="tag">API</span>
-                    </div>
-                </div>
-                <div class="description">
-                    J'ai eu l'opportunité de développer de A à Z une application de pointage entrée/sortie des salariés et visiteurs de l'entreprise.<br><br>
-    
-                    L'application télécharge l'annuaire Google et propose un ajout manuel d'employés. Ils peuvent s'identifier via un appui sur leur photo ou en présentant un qr code devant la caméra.<br><br>
-
-                    Toutes les informations sont envoyés sur le drive et peuvent se synchroniser entre plusieurs appareils.<br><br>
-
-                    Grâce à cette application les responsables ont accès à tous moments à la liste des individus présents dans l'entreprise, en cas d'incendie notament.
-                     
-                </div>
-            </div>
+        <div id="sommaire">
+          <div class="line"></div>
+          <div class="arrow_container anchor_button" href="#a_propos">
+            <div class="arrow down"></div>
+          </div>
         </div>
-    
-        <div id="ppe" class="project">
-            <div class="title">
-                <h1>Projets Personnels Encadrés</h1>
-            </div>
-            <div class="subtitle">
-                <button class="project_content_selector selected" href="#ppe1">PPE1</button>
-                <button class="project_content_selector" href="#ppe3">PPE3</button>
-                <button class="project_content_selector" href="#ppe4">PPE4</button>
-            </div>
-            <div class="project_content" id="ppe1">
-                <div class="viewer">
-                    <div class="display">
-                        <img src="images/projects/PPE1/accueil.png" class="display">
-                    </div>
-                    <div class="selector">
-                        <div class="arrow left"></div>
-                        <div class="images_selector_container">
-                            <div class="images_selector">
-                                <img src="images/projects/PPE1/accueil.png">
-                                <img src="images/projects/PPE1/basketball.png">
-                                <img src="images/projects/PPE1/contacts.png">
-                                <img src="images/projects/PPE1/responsive.png">
-                            </div>
-                        </div>
-                        <div class="arrow right"></div>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">Javascript</span>
-                        <span class="tag">SQL</span>
-                    </div>
-                </div>
-                <div class="description">
-                    Réalisation d'un site web responsive pour une association fictive qui propose des activités sportives ainsi que des locations de salles de sport.<br><br>
+      </div>
 
-                    Le site permet de présenter l'association et ses activités, réserver des salles et prendre contact.
-                </div>
-            </div>
-            <div class="project_content hidden" id="ppe3">
-                <div class="viewer">
-                    <div class="display">
-                        <img src="images/projects/PPE3/liste_praticiens.png" class="display">
-                    </div>
-                    <div class="selector">
-                        <div class="arrow left"></div>
-                        <div class="images_selector_container">
-                            <div class="images_selector">
-                                <img src="images/projects/PPE3/liste_praticiens.png">
-                                <img src="images/projects/PPE3/connexion.png">
-                                <img src="images/projects/PPE3/gestion_portefeuille.png">
-                                <img src="images/projects/PPE3/recherche_praticiens.png">
-                                <img src="images/projects/PPE3/recherche_visiteurs.png">
-                            </div>
-                        </div>
-                        <div class="arrow right"></div>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">Javascript</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">MVC</span>
-                    </div>
-                </div>
-                <div class="description">
-                    Réalisation d'un site web pour une entreprise pharmaceutique fictive.<br><br>
-
-                    Il lui permet de gérer ses visiteurs ainsi que les praticiens qu'ils visitent.<br><br>
-
-                    Le site est développé en PHP avec une architecture MVC, il est connecté à une base de données SQL.
-                </div>
-            </div>
-            <div class="project_content hidden" id="ppe4">
-                <div class="viewer">
-                    <div class="display">
-                        <img src="images/projects/PPE4/tableau_de_bord.png" class="display">
-                    </div>
-                    <div class="selector">
-                        <div class="arrow left"></div>
-                        <div class="images_selector_container">
-                            <div class="images_selector">
-                                <img src="images/projects/PPE4/tableau_de_bord.png">
-                                <img src="images/projects/PPE4/ajout.png">
-                                <img src="images/projects/PPE4/connexion.png">
-                            </div>
-                        </div>
-                        <div class="arrow right"></div>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Symfony</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">API</span>
-                    </div>
-                </div>
-                <div class="description">
-                    Développement d'un site web pour un salon nautique lui permettant de gérer les stands de l'exposition.<br><br>
-
-                    Le site est développé avec Symfony et communique avec la base de données via une API.<br><br>
-
-                    Une application android était prévue mais a été annulée à cause du covid.
-                </div>
-            </div>
+      <div id="a_propos">
+        <div id="presentation">
+          <img src="images/photo.jpg" />
+          <div>
+            <h1>Bonjour,</h1>
+            <p>
+              Je suis Frédéric Hilleriteau, étudiant en 2ème année de cycle
+              ingénieur à l'ESIEA, en majeur Software Engineering. <br /><br />
+              Vous trouverez sur ce site les projets réalisés durant mes études à l'ESIEA<br />
+            </p>
+            <span>Bonne visite</span>
+          </div>
         </div>
+        <div id="details">
+          <div id="parcours">
+            <div class="etape">
+              <span><b>Bac STI2D</b><br />2019</span>
+              <div class="point"></div>
+            </div>
+            <div class="etape">
+              <span><b>BTS SIO</b><br />2019 - 2021</span>
+              <div class="point"></div>
+            </div>
+            <div class="etape">
+              <span><b>Licence Informatique</b><br />2021 - 2022</span>
+              <div class="point"></div>
+            </div>
+            <div class="etape">
+              <span><b>Cycle ingénieur ESIEA</b><br />2022 - 2025</span>
+              <div class="point"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <section id="veille" class="project">
-            <div class="title">
-                <h1>Veille</h1>
+      <div id="stage" class="project">
+        <div class="title">
+          <h1>Projet de programmation orienté objet</h1>
+          <h2>
+            Réalisation d'un jeu vidéo sur le thème du jeu Hearthstone - Janvier 2023
+          </h2>
+        </div>
+        <div class="project_content">
+          <div class="viewer">
+            <div class="display">
+              <img src="images/projects/POO/1.png" class="display" />
             </div>
-            <div class="veille_content_container">
-                <div class="veille_content" id="veille_technologique">
-                    <div class="description_container">
-                        <div class="presentation_generale">
-                            La <b>veille technologique</b> permet de se tenir informé de façon systématique sur les technologies les plus récentes et surtout sur leur mise à disposition commerciale
-                        </div>
-                        <div class="separateur"></div>
-                        <div class="presentation_perso">
-                            Pour ma veille technologique je me suis concentré sur <b>l'évolution des framework web et mobile</b> en utilisant des outils tel que google actualité
-                        </div>
-                    </div>
-                    <div class="veille_grid">
-                        <div class="veille_element">
-                            <a href="https://www.frandroid.com/android/developpement/860101_google-lance-flutter-2-0-pour-creer-des-applications-multiplateforme-pour-mobiles-web-et-ordinateurs" target="_blank">
-                                <img src="images/veille/flutter.png" alt="">
-                                <span>Flutter 2.0</span>
-                            </a>
-                        </div>
-                        <div class="veille_element">
-                            <a href="https://javascript.developpez.com/actu/307093/Le-framework-JavaScript-pour-le-developpement-des-applications-mobile-React-Native-0-63-s-accompagne-d-une-amelioration-de-LogBox-pour-un-debogage-d-erreur-plus-facile/" target="_blank">
-                                <img src="images/veille/react_native.png" alt="">
-                                <span>React Native 0.63</span>
-                            </a>
-                        </div>
-                        <div class="veille_element">
-                            <a href="https://www.e-marketing.fr/Thematique/cross-canal-1094/breve/bien-choisir-la-techno-de-ses-apps-mobiles-en-2020-353347.htm" target="_blank">
-                                <img src="images/veille/apps_mobiles.jpg" alt="">
-                                <span>Bien choisir la techno de ses apps mobiles en 2020</span>
-                            </a>
-                        </div>
-                        <div class="veille_element">
-                            <a href="https://easypartner.fr/blog/que-choisir-entre-react-ou-angular/" target="_blank">
-                                <img src="images/veille/angular.png" alt="">
-                                <span>Angular Vs React</span>
-                            </a>
-                        </div>
-                    </div>
+            <div class="selector">
+              <div class="arrow left"></div>
+              <div class="images_selector_container">
+                <div class="images_selector">
+                  <img src="images/projects/POO/1.png" />
+                  <img src="images/projects/POO/2.png" />
                 </div>
+              </div>
+              <div class="arrow right"></div>
             </div>
-        </section>
-    
-        <footer>
-            <div>
-                <a href="https://github.com/hilleriteauf" target="_blank"><img src="images/logos/github.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/frédéric-hilleriteau-4717b0196" target="_blank"><img src="images/logos/linkedin.png" alt="Linked In"></a>
+          </div>
+          <div class="description">
+            Dans le cadre du cours de programmation orienté objet, nous avons eu pour projet de réaliser un jeu vidéo sur le thème du jeu Hearthstone.<br /><br />
+
+            Nous avons utilisé le moteur de jeu Unity pour la partie graphique et le langage C# pour la partie programmation.<br /><br />
+
+            Le jeu est un jeu de carte en tour par tour où le but est de réduire les points de vie de l'adversaire à 0.<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div id="stage" class="project">
+        <div class="title">
+          <h1>Projet de conception d'application</h1>
+          <h2>
+            Réalisation d'une carte web interactive - Février 2024
+          </h2>
+        </div>
+        <div class="project_content">
+          <div class="viewer">
+            <div class="display">
+              <img src="images/projects/map/1.jpeg" class="display" />
             </div>
-        </footer>
+            <div class="selector">
+              <div class="arrow left"></div>
+              <div class="images_selector_container">
+                <div class="images_selector">
+                  <img src="images/projects/map/1.jpeg" />
+                  <img src="images/projects/map/2.jpeg" />
+                  <img src="images/projects/map/3.jpeg" />
+                  <img src="images/projects/map/4.jpeg" />
+                </div>
+              </div>
+              <div class="arrow right"></div>
+            </div>
+          </div>
+          <div class="description">
+            Durant le cours de conception d'application, nous avons eu pour projet de réaliser une carte web interactive.<br /><br />
+
+            Nous avons utilisé le framework React pour la partie front-end et le framework ASP.NET pour la partie back-end.<br /><br />
+
+            La carte permet de mesurer la distance entre un point et les villes les plus proches. Des filtres peuvent être appliqués pour affiner la recherche.<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div id="stage" class="project">
+        <div class="title">
+          <h1>Projet de programmation GPU</h1>
+          <h2>
+            Rendu de fumée en temps réel - Avril 2024
+          </h2>
+        </div>
+        <div class="project_content">
+          <div class="viewer">
+            <div class="display">
+              <img src="images/projects/smoke/1.gif" class="display" />
+            </div>
+            <div class="selector">
+              <div class="arrow left"></div>
+              <div class="images_selector_container">
+                <div class="images_selector">
+                  <img src="images/projects/smoke/1.gif" />
+                  <img src="images/projects/smoke/2.png" />
+                  <img src="images/projects/smoke/3.png" />
+                </div>
+              </div>
+              <div class="arrow right"></div>
+            </div>
+          </div>
+          <div class="description">
+            Dans le cadre du cours de programmation GPU, nous avons eu pour projet de réaliser une simulation de fumée en temps réel.<br /><br />
+
+            Nous avons utilisé le moteur de jeu Unity pour la partie graphique et le langage C# pour la partie programmation.<br /><br />
+
+            La simulation est basée sur un système de particules qui se déplacent de façon aléatoires. La fumée est générée à partir de ces particules.<br /><br />
+
+            Les calculs de rendu sont effectués sur la carte graphique.<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <a href="https://github.com/hilleriteauf" target="_blank"
+            ><img src="images/logos/github.png" alt="GitHub"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/frédéric-hilleriteau-4717b0196"
+            target="_blank"
+            ><img src="images/logos/linkedin.png" alt="Linked In"
+          /></a>
+        </div>
+      </footer>
     </main>
 
     <script>
-        init();
+      init();
     </script>
-</body>
-
+  </body>
 </html>

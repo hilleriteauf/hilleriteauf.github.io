@@ -7,7 +7,7 @@
 #a_propos > #presentation {
     display: flex;
     justify-content: center;
-    max-width: 950px;
+    max-width: 835px;
     margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@
     position: absolute;
     right: 50%;
     top: 8px;
-    width: 170px;
+    width: 300px;
     height: 3px;
     background-color: white;
 }
